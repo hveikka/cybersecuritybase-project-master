@@ -61,14 +61,5 @@ public class SampleTest {
                 SecurityMockMvcRequestPostProcessors.csrf())).andReturn();
     }
 
-    @Test
-    public void loginWithCsrfTokenAllowed() throws Exception {
-        MvcResult res = mockMvc.perform(post("/login").session(mockSession).param("username", "ted").param("password", "ted").with(
-                SecurityMockMvcRequestPostProcessors.csrf())).andReturn();
-    }
 
-    @Test
-    public void loginWithoutCsrfTokenNotAllowed() throws Throwable {
-        mockMvc.perform(post("/login").session(mockSession).param("username", "ted").param("password", "ted")).andExpect(status().isForbidden());
-    }
 }
