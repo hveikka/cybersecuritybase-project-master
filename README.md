@@ -1,3 +1,3 @@
-# Arvauspeli
+# Cyber security project
 
-Sovelluksen avulla pystyy pelaamaan arvailupeliä. Yritä vastata mahdollisimman moneen kysymykseen oikein!
+Download the project to your computer from here and open it in netbeans to test it.
